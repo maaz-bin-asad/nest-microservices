@@ -15,6 +15,7 @@ export class AuthController {
   async getUser(@Ctx() context: RmqContext) {
     const channel = context.getChannelRef();
     const message = context.getMessage();
+    // console.log(channel, message);
     return { user: 'USER' };
   }
 }
